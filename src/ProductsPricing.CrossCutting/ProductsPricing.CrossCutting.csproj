@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.2.2" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProductsPricing.Application\ProductsPricing.Application.csproj" />
+    <ProjectReference Include="..\ProductsPricing.Core\ProductsPricing.Core.csproj" />
+    <ProjectReference Include="..\ProductsPricing.Data.SqlServer.Provider\ProductsPricing.Data.SqlServer.Provider.csproj" />
+    <ProjectReference Include="..\ProductsPricing.Data\ProductsPricing.Data.csproj" />
+    <ProjectReference Include="..\ProductsPricing.Domain.Sintegra\ProductsPricing.Domain.Sintegra.csproj" />
+    <ProjectReference Include="..\ProductsPricing.Domain.Sped\ProductsPricing.Domain.Sped.csproj" />
+  </ItemGroup>
+
+</Project>
